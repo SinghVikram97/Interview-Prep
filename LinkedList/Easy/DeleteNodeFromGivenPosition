@@ -1,0 +1,30 @@
+https://practice.geeksforgeeks.org/problems/delete-a-node-in-single-linked-list/1
+
+https://drive.google.com/open?id=1dKNM0cVI-z8o8Wz0Hry2m54wcthL5nBg
+
+Node* deleteNode(Node *head,int x)  
+{
+    //Your code here
+    x=x-1;        /// Zero based indexing see image
+    if(x==0){
+        Node *temp=head;
+        head=head->next;
+        delete temp;
+        return head;
+    }
+    else{
+        
+        Node *prev=head;
+        while(x-1>0){
+            prev=prev->next;
+            x--;
+        }
+        Node *temp=prev->next;
+        prev->next=prev->next->next;
+        delete temp;
+        return head;
+        
+    }
+    
+    
+}
