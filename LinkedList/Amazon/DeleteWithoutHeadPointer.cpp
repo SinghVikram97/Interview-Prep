@@ -15,3 +15,6 @@ void deleteNode(Node *node)
    delete temp;
    
 }
+
+
+Doesn't work for last node see in notebook for sentinel node.
