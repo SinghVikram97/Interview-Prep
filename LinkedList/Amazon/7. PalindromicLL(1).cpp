@@ -1,6 +1,8 @@
 https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
 https://leetcode.com/problems/palindrome-linked-list/
 
+https://drive.google.com/open?id=1NVVj5wDZfdqYc7_L_hwC3MAaXp9TKgtO
+
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
