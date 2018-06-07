@@ -19,8 +19,10 @@ Node* SortedMerge(Node* head1,   Node* head2)
             
             if(prev==NULL){
                 
+                // No element added till now
                 prev=temp1;
                 temp1=temp1->next;
+                // 1st element added from list 1 so make it newHead;
                 newHead=head1;
             }
             else{
