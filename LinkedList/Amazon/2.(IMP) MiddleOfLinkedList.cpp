@@ -14,19 +14,26 @@ int getMiddle(Node *head)
    Node *slow=head;
    Node *fast=head;
    
-   while(fast->next!=NULL && fast->next->next!=NULL){
+//    while(fast->next!=NULL && fast->next->next!=NULL){
        
-       fast=fast->next->next;
-       slow=slow->next;
+//        fast=fast->next->next;
+//        slow=slow->next;
        
-   }
+//    }
+   while(fast!=NULL && fast->next!=NULL){
    
-   // Odd elements
-   if(fast->next==NULL){
-       return slow->data;
+         slow=slow->next;
+         fast=fast->next->next;
+   
    }
-   // Even elements
-   else if(fast->next->next==NULL){
-       return slow->next->data;
-   }
+   cout<<"Mid is :"<<slow->data;
+   
+//    // Odd elements
+//    if(fast->next==NULL){
+//        return slow->data;
+//    }
+//    // Even elements
+//    else if(fast->next->next==NULL){
+//        return slow->next->data;
+//    }
 }
