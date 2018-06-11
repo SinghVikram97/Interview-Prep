@@ -1,6 +1,6 @@
 https://practice.geeksforgeeks.org/problems/sort-a-stack/1
 
-https://drive.google.com/open?id=16UUE45V6ISEWByqfhyII46Z8H9g8VgkK
+https://drive.google.com/open?id=16UUE45V6ISEWByqfhyII46Z8H9g8VgkK  (Not O(n) it's O(nlogn))
 
    void SortedStack :: sort()
 {
