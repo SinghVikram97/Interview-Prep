@@ -3,8 +3,7 @@ https://leetcode.com/problems/min-stack/description/
 https://drive.google.com/open?id=1zVVoStgNqWVO957UB0UaywClRXs7OtDP
 https://drive.google.com/open?id=1JD9FYdZ8ucayB843wALCDt5atbLzugQl
 
-https://www.geeksforgeeks.org/design-and-implement-special-stack-data-structure/ (Look at this)
-
+// Global, they shouldn't be global
 vector<int> min_list;
 vector<int> original_list;
 class MinStack {
@@ -48,4 +47,41 @@ public:
     int getMin() {
         return min_list.back();
     }
+};
+
+// Correct approach
+class MinStack {
+    private:
+        stack<int> elementStack;
+        stack<int> minimumStack;
+        int minElement = -1;
+    public:
+        void push(int x) {
+            elementStack.push(x);
+            if(elementStack.size() == 1 || x <= minElement) {
+                minimumStack.push(x);
+                minElement = x;
+            } 
+        }
+
+        void pop() {
+            if (elementStack.top() == minElement) {
+                minimumStack.pop();
+                if (!minimumStack.empty()) {
+                    minElement = minimumStack.top();
+                } else {
+                    minElement = -1;
+                }
+            }
+            elementStack.pop();
+        }
+
+        int top() {
+            if (elementStack.empty()) return -1;
+            return elementStack.top();
+        }
+
+        int getMin() {
+            return minElement;
+        }
 };
