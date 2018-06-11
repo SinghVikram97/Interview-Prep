@@ -3,6 +3,8 @@ https://leetcode.com/problems/min-stack/description/
 https://drive.google.com/open?id=1zVVoStgNqWVO957UB0UaywClRXs7OtDP
 https://drive.google.com/open?id=1JD9FYdZ8ucayB843wALCDt5atbLzugQl
 
+https://www.geeksforgeeks.org/design-and-implement-special-stack-data-structure/ (Look at this)
+
 vector<int> min_list;
 vector<int> original_list;
 class MinStack {
