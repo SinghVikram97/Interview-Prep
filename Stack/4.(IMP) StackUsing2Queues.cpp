@@ -1,6 +1,6 @@
 https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1
 
-https://drive.google.com/open?id=1Nv702dIgkb5M_LpY1rVB-fIMyWx5enr9
+https://drive.google.com/open?id=1Nv702dIgkb5M_LpY1rVB-fIMyWx5enr9 O(n) Pop
 
 /* The structure of the class is
 class QueueStack{
