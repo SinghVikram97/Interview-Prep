@@ -1,5 +1,6 @@
 https://practice.geeksforgeeks.org/problems/insert-a-node-in-a-bst/1
 
+Time Complexity-O(logn) for Insertion,Searching,Deletion
 https://drive.google.com/open?id=1HTVm2ypB5lGvsyCmAs5-gGsJMX5SSh1H
 https://drive.google.com/open?id=12RskIGXU9PoF1Wy0WiFK0O-XRLauUNQK
 
