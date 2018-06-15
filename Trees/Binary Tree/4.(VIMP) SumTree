@@ -1,0 +1,68 @@
+https://practice.geeksforgeeks.org/problems/sum-tree/1
+
+https://drive.google.com/open?id=1LUByd8t7h-5y_ml_qtEJTzv-H81ktWpm
+Time complexity=O(N) N=no of nodes we visit each node once
+
+bool isLeaf(Node *node){
+    
+    if(node==NULL){
+        return 0;
+    }
+    
+    if(node->left==NULL && node->right==NULL){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+bool isSumTree(Node* root)
+{
+    // If node null or leaf node then it's true
+     if(root==NULL || isLeaf(root)){
+         return 1;
+     }
+     if(isSumTree(root->left) && isSumTree(root->right)){
+         
+         
+         // Check if root->data=sum of left substree and right substree
+         int ls,rs;
+         
+         // No left substree
+         if(root->left==NULL){
+             ls=0;
+         }
+         // If root->left leaf node,,, sum of substree rooted with root->left is equal to value of root->left
+         else if(isLeaf(root->left)){
+             ls=root->left->data;
+         }
+         // Internal node,,,, sum of subtree rooted with root->left is equal to 2*(root->left)
+         else{
+             ls=2*(root->left->data);
+         }
+         
+         if(root->right==NULL){
+             rs=0;
+         }
+         
+         else if(isLeaf(root->right)){
+             rs=root->right->data;
+         }
+        
+         else{
+             rs=2*(root->right->data);
+         }
+         
+         if(root->data==ls+rs){
+             return 1;
+         }
+         else{
+             return 0;
+         }
+         
+     }
+     else{
+         return 0;
+     }
+     
+}
