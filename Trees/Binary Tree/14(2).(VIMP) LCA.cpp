@@ -3,6 +3,8 @@ https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-t
 https://drive.google.com/open?id=1jyA9DxArKsemr6mw-m56AbSeZPOodhqZ
 https://drive.google.com/open?id=1ipQY0m18vE8WAVkV5M0E3EFmV2N7Ko5_
 
+Correction space compelexity is still O(height of the tree) due to recursive stack.
+
 If you still don't understand
 https://youtu.be/13m9ZCB8gjw
 
