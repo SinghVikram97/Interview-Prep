@@ -11,6 +11,12 @@ Time complexity=O(N) n is number of nodes not height of the tree
 As if the node is in right subtree we first traverse whole of left subtree to find a path
 Then we traverse to right. So effectively we traverse every node once.
 
+Space complexity
+
+Recursion stack in a balanced tree always take space=height of the tree at max
+Vector<int> also will take max height of tree space
+    
+ 
 bool findPath(Node *root,int data,vector<Node *> &v){
     
     if(root==NULL){
