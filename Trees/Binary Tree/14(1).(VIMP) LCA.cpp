@@ -1,5 +1,10 @@
 https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
 
+Computation of lowest common ancestors may be useful, for instance, as part of a procedure for 
+determining the distance between pairs of nodes in a tree: the distance from n1 to n2 can be 
+computed as the distance from the root to n1, plus the distance from the root to n2,
+minus twice the distance from the root to their lowest common ancestor
+
 https://drive.google.com/open?id=14pXDbu8D4HCUzDHqJqnCG7fJ_k18hxXq
 
 Time complexity=O(N) n is number of nodes not height of the tree
