@@ -1,5 +1,7 @@
 https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1
 
+https://drive.google.com/open?id=1jyA9DxArKsemr6mw-m56AbSeZPOodhqZ
+
 https://drive.google.com/open?id=1zXvizBlLD5wUpZdeqT5GKdnrIEI2g2ud
 
 Time complexity of above solution is O(h) where h is height of tree. Also, the above solution requires O(h) extra space in function call stack 
