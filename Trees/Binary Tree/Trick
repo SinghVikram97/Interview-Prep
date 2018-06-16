@@ -1,1 +1,13 @@
-Return a pair<height,diameter> or pair<height,bool> in tree questions to reduce the time complexity
+Return a pair<height,diameter> or pair<height,bool>  in tree questions to reduce the time complexity
+
+Focus on base case usually
+if(root==NULL){
+
+  return make_pair(0,0)
+
+}
+
+
+And focus on how to return those 2 things from left subtree return value and right substree return value
+
+See 8(2) and and 10, 13 question
