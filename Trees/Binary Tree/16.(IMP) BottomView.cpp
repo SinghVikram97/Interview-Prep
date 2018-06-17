@@ -3,6 +3,9 @@ https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 https://drive.google.com/open?id=1SdB9Q_HK-JBQ0rKBaNM0XwV0fA1kHrSl
 https://drive.google.com/open?id=1slcNct1hcC7V5sVNxYbWEIoKEAMkVGWU
 
+O(n) where n is number of nodes in the binary tree 
+WHY? Time complexity of inorder traversal in O(n) 
+
 void bottomView(Node *root)
 {
     unordered_map<int,vector<Node *> > hd;
