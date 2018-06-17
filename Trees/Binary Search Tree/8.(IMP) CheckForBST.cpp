@@ -9,6 +9,7 @@ https://drive.google.com/open?id=1devIzBsaANZYHK7Objd65p2WyZcZZn4S
 pair<bool,pair<int,int> > BST(Node *root){
     
     if(root==NULL){
+        // For NULL return it's minimum as INT_MAX as we want ki leaf node ka data should be less than it's minimum
         return make_pair(true,make_pair(INT_MAX,INT_MIN));
     }
     
