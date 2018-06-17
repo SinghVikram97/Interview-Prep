@@ -1,5 +1,7 @@
 https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1
 
+We can print spiral order traversal in O(n) time and O(n) extra space
+
 https://drive.google.com/open?id=1EGO5oCtiZ2MiJdV8ThlY7vHRaFEygtcu
 
 void printSpiral(Node *root)
