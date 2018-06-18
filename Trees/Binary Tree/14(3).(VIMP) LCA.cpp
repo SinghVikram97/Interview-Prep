@@ -17,3 +17,5 @@ So it will give 20 for following too
 
 But 50 not present in the tree
 
+To Improve we can 1st check if both keys present in the tree or not - O(N)
+  LCA is also- O(N)
