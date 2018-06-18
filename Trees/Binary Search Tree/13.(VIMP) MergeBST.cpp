@@ -3,7 +3,7 @@
 https://drive.google.com/open?id=1mh4W3GhL9QswAjRQs3rjDHc_52eMSUXD
 https://drive.google.com/open?id=1XnTdbTjo3CptEMDLCSJaOrMjflO2FY_9
 
-
+SEE 14 1st to get an IDEA
 
 // 1. First, push all the elements from root to the left-most leaf node onto a stack. Do this for both trees 
 // 2. Peek at the top element of each stack (if non-empty) and print the smaller one. 
