@@ -2,6 +2,8 @@ https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes
 
 https://drive.google.com/open?id=1M72FbEN7PNUbslB_SC0-5c5ftprPbVDE
 
+https://drive.google.com/open?id=1hsbVSNmMBnNSRLGyMiOSIQZBCWDXXjuH (BETTER METHOD)
+
 int Lca(Node *root,int a,int b){
     
     if(root==NULL){
