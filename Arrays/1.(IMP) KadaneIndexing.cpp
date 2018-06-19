@@ -1,6 +1,6 @@
 https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0
 
-
+https://drive.google.com/open?id=1Dn1yJeLgKqCuXs85PDEmUCH8bqUpYf6O
 
 #include<bits/stdc++.h>
 using namespace std;
