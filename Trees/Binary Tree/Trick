@@ -1,5 +1,6 @@
 Return a pair<height,diameter> or pair<height,bool>  in tree questions to reduce the time complexity
 
+
 Focus on base case usually
 if(root==NULL){
 
@@ -11,3 +12,9 @@ if(root==NULL){
 And focus on how to return those 2 things from left subtree return value and right substree return value
 
 See 8(2) and and 10, 13 question
+
+See if answer is one of the 3 options 
+1. In left subtree
+2. In right subtree
+3. Or passing through root
+Then we need to return a pair surely. Ex. diameter question and path sum
