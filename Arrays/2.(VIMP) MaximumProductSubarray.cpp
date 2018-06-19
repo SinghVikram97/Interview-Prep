@@ -50,3 +50,17 @@ int main(){
             cout<<global_maximum<<endl;
     }
 }
+
+
+Kadane by similar approach
+int cs=0,ms=INT_MIN;
+  for(int i=0;i<n;i++){
+            
+     cs=max(cs+v[i],v[i]);
+            
+      if(cs>ms){
+         ms=cs;
+       }
+            
+    }
+   cout<<ms<<endl;
