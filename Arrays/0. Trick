@@ -1,0 +1,3 @@
+Prefix Sum - Always remember to start with 0 at index 0 and start from 1 for elements
+for i=1;i<=n;i++
+prefix[i]=prefix[i-1]+v[i]
