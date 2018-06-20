@@ -1,5 +1,7 @@
 https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k/0
 
+Also called sliding window of size =k
+
 https://drive.google.com/open?id=14tXs4lt_DEE9zeLmPyqVmBo3W30mwQu3
 
 1. We scan the array from 0 to n-1, keep "promising" elements in the deque. The algorithm is amortized O(n) as each element is pushed and popped once
