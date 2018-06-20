@@ -6,7 +6,8 @@ bool findPair(vector<int> &v,int n,int k){
     // Start and end
     int l=0,r=n-1;
        
-    while(l<=r){
+    // Not l=r
+    while(l<r){
         
         if(v[l]+v[r]==k){
             return true;
