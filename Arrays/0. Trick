@@ -5,4 +5,12 @@
 2. If you want to keep track of previous result also use queue current result at front of the queue previous at the back
    if current result becomes invalid pop from front of queue and front of queue becomes previous result
 
+3. If you need to find an element such that you need to compare it's left and right side
+   O(n) solution is to store something previously from which you can calculate whether this is the required 
+   element in O(1) 
+   for(int i=0;i<n;i++){
+   
+   // Do O(1) Work for this element and check whether this is the required element
+   
+   }
 
