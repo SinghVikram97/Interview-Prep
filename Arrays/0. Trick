@@ -1,3 +1,8 @@
-Prefix Sum - Always remember to start with 0 at index 0 and start from 1 for elements
-for i=1;i<=n;i++
-prefix[i]=prefix[i-1]+v[i]
+1. Prefix Sum - Always remember to start with 0 at index 0 and start from 1 for elements
+   for i=1;i<=n;i++
+   prefix[i]=prefix[i-1]+v[i]
+   
+2. If you want to keep track of previous result also use queue current result at front of the queue previous at the back
+   if current result becomes invalid pop from front of queue and front of queue becomes previous result
+
+
