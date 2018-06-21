@@ -1,0 +1,7 @@
+Does array contains only positive or negative numbers?
+What if the same pair repeats twice, should we print it every time?
+Is reverse of pair is acceptable e.g. can we print both (4,1) and (1,4) if given sum is 5.
+Do we need to print only distinct pair? does (3, 3) is a valid pair forgiven sum of 6?
+How big the array is?
+
+
