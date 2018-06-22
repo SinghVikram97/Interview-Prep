@@ -21,6 +21,7 @@ public:
             
             // Now find permutation of remaining elements ie [1,2,3] fix 3 at start [3,2,1] now find permutations of [2,1]
             backtrack(nums,start+1,finalAns);  // Carefull not i+1 it is start+1
+            // We have fixed start now fix start+1 position not i+1
             
             // Backtrack
             swap(nums[i],nums[start]);
