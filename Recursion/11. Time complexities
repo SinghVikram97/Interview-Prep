@@ -1,0 +1,5 @@
+Time complexity for generating subsets ---> total subsets possible 2^n and each subset has n elements
+so we are visiting each element of each subset hence time complexity=O(n*2^n)
+
+Time complexity for generating permutations---> total permuations possible n! and each permutation has n elements
+so time complexity=O(n!*n)
