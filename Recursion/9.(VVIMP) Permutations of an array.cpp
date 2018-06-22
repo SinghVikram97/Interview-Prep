@@ -1,12 +1,15 @@
 https://leetcode.com/problems/permutations/description/
 
+Can be string also
+
 https://drive.google.com/open?id=1XbqPunwmEcyLqV8io-ORpz25ZRJJP1og
 https://drive.google.com/open?id=10dBub9PD45xFRXDmX3qG5mzhng5q4Jsr
 https://drive.google.com/open?id=1QnFxsaC_aS3zXAxDYTw3StQQ1TPmdDfA
 
 class Solution {
 public:
-    void backtrack(vector<int> nums,int start,vector<vector<int> > &finalAns){
+    // Nums passed by reference to avoid making copies saves space
+    void backtrack(vector<int> &nums,int start,vector<vector<int> > &finalAns){
         
         if(start==nums.size()){
             finalAns.push_back(nums);
@@ -24,7 +27,8 @@ public:
             // We have fixed start now fix start+1 position not i+1
             
             // Backtrack
-            swap(nums[i],nums[start]);
+            swap(nums[i],nums[start]); // (NUMS passed by reference so we have to backtrack) otherwise we can remove this statement
+            // It will still print correct solution although order might be different
             
         }
         
