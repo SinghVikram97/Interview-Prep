@@ -6,6 +6,8 @@ https://drive.google.com/open?id=1ucly7l8EJxMb6qOGkmNsHBI4C6dozGYa
 https://leetcode.com/problems/combination-sum-ii/discuss/16862/C++-backtracking-solution-with-detailed-explanation
 (For duplicates)
 
+This case will only arise if duplicate nos in original array
+
 
 class Solution {
 public:
