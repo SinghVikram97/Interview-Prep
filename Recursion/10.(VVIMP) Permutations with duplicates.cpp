@@ -16,7 +16,7 @@ public:
         unordered_set<int> s;
         for(int i=start;i<nums.size();i++){
             
-            
+            // If same element already made head ignore this element
             if(s.find(nums[i])!=s.end()){
                 continue;
             }
