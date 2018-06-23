@@ -58,6 +58,7 @@ int maxProfit(vector<int>& prices) {
        return dp[n-1];        
     }
     
+    WITHOUT DP
     ..................................
     Since dp[i-1] is just one variable we can keep it a variable prevProfit
     
@@ -85,4 +86,31 @@ int maxProfit(vector<int>& prices) {
         }
         
        return profit;
+    }
+
+    ....................................................
+    USING KADANE'S ALGO  (IMP)
+    https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/39038/Kadane's-Algorithm-Since-no-one-has-mentioned-about-this-so-far-:)-(In-case-if-interviewer-twists-the-input)         
+            
+    int maxProfit(vector<int>& prices) {
+        
+        int n=prices.size();
+        
+        // n=1 as can't buy and sell on same day
+        if(n==0 || n==1){
+            return 0;
+        }
+        
+        int max_so_far=0,cur_sum=0;
+        for(int i=1;i<n;i++){
+            
+            if(cur_sum<=0){
+                cur_sum=0;
+            }
+            cur_sum=cur_sum+(prices[i]-prices[i-1]);
+            if(cur_sum>max_so_far){
+                max_so_far=cur_sum;
+            }
+        }
+        return max_so_far;
     }
