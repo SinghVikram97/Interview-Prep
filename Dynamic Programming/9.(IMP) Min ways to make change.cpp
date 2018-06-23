@@ -21,6 +21,7 @@ public:
             }
             
         }
+        // IMP CASE if can't make a change example amount=3 and only coin is 3
         if(dp[amount]==INT_MAX){
             return -1;
         }
