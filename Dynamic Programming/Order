@@ -1,0 +1,2 @@
+If order doesn't matter it means [1,2,1] and [2,1,1] and [1,1,2] treated as 1 way
+If order matters then treated as 3 ways5
