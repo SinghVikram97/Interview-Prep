@@ -21,6 +21,7 @@ public:
             
             for(int j=i-1;j>=0;j--){
                 
+                // Starting from index j can we take nums[j] jumps to reach ith index or beyond it
                 if(j+nums[j]>=i){
                     dp[i]=min(dp[i],1+dp[j]);
                 }
