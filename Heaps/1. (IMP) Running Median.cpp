@@ -2,7 +2,7 @@ https://leetcode.com/problems/find-median-from-data-stream/description/
 
 .................................................................
 Brute force ---> Insert - O(1) Find Median - O(nlogn)
-https://drive.google.com/open?id=1OFYd_4KDHh7gKbEGcxGwqwnkYIKWpefP
+https://drive.google.com/open?id=1TyEW_7rcaJ6yfrIKJM_osI1qWzlrq6hj
 class MedianFinder {
 public:
     /** initialize your data structure here. */
@@ -49,8 +49,8 @@ public:
  ..........................................
  Using 2 heaps
  Time - Insert (logn) and find median (1)
- https://drive.google.com/open?id=1OFYd_4KDHh7gKbEGcxGwqwnkYIKWpefP
- 
+ https://drive.google.com/open?id=1jjxkuG_15dTUbkOaZzw6vEdpkw3kEewE 
+
  class MedianFinder {
 public:
     /** initialize your data structure here. */
