@@ -1,5 +1,7 @@
 https://leetcode.com/problems/jump-game-ii/description/
 
+https://drive.google.com/open?id=1dYYkpsSrjFcRS1nhPGifTb5xGXUqBr0w
+
 class Solution {
 public:
     int jump(vector<int>& nums) {
