@@ -2,6 +2,8 @@ https://practice.geeksforgeeks.org/problems/set-bits/0
 
 https://drive.google.com/open?id=1TMYKzlAIjCtyuwhi9jnjEyFNOSBfiotV
 
+https://drive.google.com/open?id=1xWq1ru4hmBgeIFHm50qcosRYhvOnnUXL (IMP) 
+
 // O(no of bits) ie sizeof(int)
 int setBitsCount1(int n){
     
