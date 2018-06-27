@@ -17,10 +17,12 @@ ll mySqrt(ll x) {
             
             squared=mid*mid;
             
+            // Perfect square
             if(squared==x){
                 return mid;
             }
             
+            // Store the ans as we want floor of not perfect square nos
             else if(squared<x){
                 ans=mid;
                 start=mid+1;
@@ -29,5 +31,6 @@ ll mySqrt(ll x) {
                 end=mid-1;
             }
         }
+        // Not a perfect square
         return ans;
  }
