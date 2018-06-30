@@ -1,5 +1,7 @@
 https://practice.geeksforgeeks.org/problems/circular-tour/1
 
+https://leetcode.com/problems/gas-station/discuss/42568/Share-some-of-my-ideas.(IMP)
+
 https://drive.google.com/open?id=1Wp8dzuvaPTGjoq0k33RUambk9pQrQANj
 https://drive.google.com/open?id=1IhAzkfR3wkLIASm3BiggD8N5CLcq9jvm
 
