@@ -1,3 +1,5 @@
 1. If related to array 1. Sort 2. Hash table 3. Sliding window
 2. If generate/print all possible then definitely recursion
 3. If find min/max of all possible then dp
+4. Avoid use of pow() as much as possible
+5. For finding sums or pairs with given sum sort and use 2 pointers
