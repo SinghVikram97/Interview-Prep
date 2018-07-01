@@ -2,4 +2,6 @@
 2. If generate/print all possible then definitely recursion
 3. If find min/max of all possible then dp
 4. Avoid use of pow() as much as possible
-5. For finding sums or pairs with given sum sort and use 2 pointers
+5. For finding sums or pairs with given sum sort and use 2 pointers.
+6. Converting '2' to 2 --> int num='2'-'0'
+7. Stoi interger to string
