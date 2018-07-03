@@ -1,0 +1,48 @@
+https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/
+
+Similar to upper and lower bound in binary search
+
+Time complexity-O(logn)
+
+int Ceil(Node *root,int key){
+
+    if(root==NULL){
+        return -1;
+    }
+    if(root->data==key){
+        return root->data;
+    }
+    /// Root can't be the ceil of key, move right
+    if(root->data<key){
+        return Ceil(root->right,key);
+    }
+
+    /// Now root->data>key so either root->data is ceil
+    /// Or if we can find a greater value than key is left subtree
+    /// Then that would be the ceil as left subtree as elements less than root->data
+
+    int ceil=Ceil(root->left,key);
+
+    /// If it doesn't return -1 then it means we have an element in left subtree>key
+    ceil=(ceil>=input)?(ceil):(root->data);
+
+}
+
+int floor(node *root, int input)
+{
+    // Base case
+    if( root == NULL )
+        return -1;
+ 
+    // We found equal key
+    if( root->key == input )
+        return root->key;
+ 
+    // If root's key is bigger, floor must be in left subtree
+    if( root->key> input )
+        return floor(root->left, input);
+ 
+    // Else, either right subtree or root has the floor value
+    int floor = floor(root->right, input);
+    return (floor <= input && floor!=-1) ? floor : root->key;
+}
