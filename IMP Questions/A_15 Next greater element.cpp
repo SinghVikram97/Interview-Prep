@@ -12,3 +12,13 @@ int replace(vector<int> &v,int n){
         maxi=max(temp,maxi);
     }
 }
+
+For largest greater element to the right
+if(maxi>v[i])
+{
+    lgr[i]=maxi;
+}
+else{
+    lgr[i]=-1;
+    maxi=v[i];
+}
