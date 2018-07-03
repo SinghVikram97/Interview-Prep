@@ -5,3 +5,4 @@
 5. For finding sums or pairs with given sum sort and use 2 pointers.
 6. Converting '2' to 2 --> int num='2'-'0'
 7. Stoi interger to string
+8. For a given element find elements to left find elements to left and compare the left,arr[i] and right
