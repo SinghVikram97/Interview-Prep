@@ -1,2 +1,5 @@
 1.Give use cases when you will prefer Hash table instead of BST and vice-versa?
 2.What happens in case of duplicate insertions in Hash table and BST. What is its effect on the complexity of search?
+3. what are some algorithmic paradigm? Difference between Greedy and DP? Questions on Dijkstra(Complexity, greedy or dp). 
+   And finally I was given a problem based on graph and was asked which algorithmic paradigm will be used to solve it?
+   Answer was backtracking.
