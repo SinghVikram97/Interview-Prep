@@ -2,6 +2,9 @@ https://practice.geeksforgeeks.org/problems/root-to-leaf-paths/1
 
 https://drive.google.com/open?id=1IBHT9UiLTJbeaBfGLmmGRrrPJzVU4yEf
 
+Time Complexity--> Traversing the tree plus printing array equal to height of the tree at leaf node
+O(num_nodes+ num_leafs*height)
+
 void printPathsUtil(Node *root,vector<int> path){
     
     // If null don't print anything
