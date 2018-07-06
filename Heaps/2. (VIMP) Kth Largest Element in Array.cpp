@@ -1,5 +1,7 @@
 
 Brute Force- O(nlogn)
+    
+SORT THE ARRAY AND RETURN THE KTH ELEMENT
 
 https://drive.google.com/open?id=1WC2KnvqTyH3ZM1IbLy3pZmd5rtTUpr2l
 
