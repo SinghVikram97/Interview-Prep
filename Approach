@@ -7,3 +7,4 @@
 7. Stoi interger to string
 8. For a given element find elements to left find elements to left and compare the left,arr[i] and right
 9. For segregation ie. move elements of particular type to front use quicksort approach A_23 A_24 A_25 in IMP QUES
+10. For k th element use heap
