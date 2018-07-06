@@ -1,6 +1,13 @@
 https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
+.................................
+1. SORT
+
+ADD ALL ELEMENTS TO THE LIST
+SORT THE LIST
+AND RETURN THE KTH ELEMENT
 ....................................
-BRUTE FORCE->
+    
+2. BRUTE FORCE->
 SIMILAR APPROACH TO THIS
 KTH LARGEST IN AN ARRAY
 https://github.com/SinghVikram97/Interview-Prep/blob/master/Heaps/2.%20(VIMP)%20Kth%20Largest%20Element%20in%20Array.cpp
