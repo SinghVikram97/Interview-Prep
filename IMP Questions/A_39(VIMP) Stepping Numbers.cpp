@@ -6,6 +6,8 @@ https://practice.geeksforgeeks.org/problems/stepping-numberswrong-output/0
 https://drive.google.com/open?id=1FHhrUlnm5Yg2DKbwHOZP_0IudKU6jWc3
 https://drive.google.com/open?id=1xreYLbAj7ySzvUtrqEh8T4mgcDP1hwJD ALGO
 
+BRUTE FORCE-> CHECK EVERY NO FROM N TO M WHETHER IT IS A STEPPING NUMBER
+
 void bfsHelper(int startVertex,int n,int m,int &count){
     
     queue<int> q;
