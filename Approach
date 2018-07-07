@@ -9,3 +9,4 @@
 9. For segregation ie. move elements of particular type to front use quicksort approach A_23 A_24 A_25 in IMP QUES
 10. For kth smallest element use heap to build max heap of k smallest elements and it's top will be kth smallest element.
     For kth largest element use heap to build min heap of k largest elements and it's top will be kth largest element.
+11. For paranthesis/brackets use stack
