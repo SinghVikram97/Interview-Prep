@@ -15,3 +15,6 @@ string reverseString(string s){
     return s;
 }
 
+Reverses a string between [first,last)
+reverse(s.begin(),s.begin()+2);
+
