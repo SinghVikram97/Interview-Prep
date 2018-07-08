@@ -2,6 +2,10 @@ https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0
 
 https://drive.google.com/open?id=1xmIb7jA5ZVUYqE7Do8RMbhzltl-bPa01
 
+CLARIFY IF STRING NORMAL EX ABC DEF
+DOESN'T HAVE LEADING/TERMINAL/MORE THAN ONE SPACE B/W 2 WORDS
+EX."         ABC       DEF        "
+
 void reverseWords(string &s) {
         /// 1.Reverse the whole string
         reverse(s.begin(),s.end());
