@@ -9,3 +9,9 @@ string reverseString(string s){
     }
     return s;
 }
+
+string reverseString(string s){
+    reverse(s.begin(),s.end());
+    return s;
+}
+
