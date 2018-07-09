@@ -36,6 +36,8 @@ USING SUBSTRING APPROACH
 TIME-O(N^2) OR O(N) DEPENDING UPON THE IMPLEMENTATION OF FIND FUNCTION IN C++ STL
 SPACE- O(N) FOR STORING A+A
 
+https://drive.google.com/open?id=12i75YeJbtZ4l4F1PA70ImnCqBHqIhCFv
+
 bool rotateString(string A, string B) {
         
         if(A.length()!=B.length()){
