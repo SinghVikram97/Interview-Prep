@@ -48,20 +48,19 @@ int main(){
 
     s+="bca";
 
-    /// Find substring b/w i and j
+    /// Find substring starting from i of length j
     /// s is bcabca
     int i=1;
-    int j=4;
+    int j=4; 
     cout<<s.substr(i,j)<<endl;  /// cabc
-    cout<<s.substr(i,s.length()-1)<<endl; /// from s[i] to end cabca
+    
+    // If given start and end indicies
+    int start=1,end=5;
+    cout<<s.substr(start,end-start+1); // Includes end
 
     /// Find position of substring (Return start position)
     cout<<s.find("cab")<<endl;
 
-    /// Delete a subtring b/w i and j
-    /// String is bcabca
-    s.erase(i,j);
-    cout<<s<<endl;
 
     /// Delete the whole string
     s.erase();
