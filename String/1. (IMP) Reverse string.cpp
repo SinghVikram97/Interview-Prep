@@ -18,6 +18,4 @@ string reverseString(string s){
 Reverses a string between [first,last)
 reverse(s.begin(),s.begin()+2);
 
-Note-> Different from s.substr(first,last);
-                           
-Generates substre from [first,last]
+
