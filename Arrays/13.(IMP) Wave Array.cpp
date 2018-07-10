@@ -22,6 +22,9 @@ void wavePrint(vector<int> &v,int n){
 
 
 https://drive.google.com/open?id=15Cv5nJfa_6_4fnyzd8f5gMk6cJ5Q-HYM
+https://drive.google.com/open?id=1GCddt7wd5_V_tSh-FTIsfcvpeq3eSB0R
+
+Same question https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
 
 One of the possible answers in O(n) but not lexicographically smallest
 
