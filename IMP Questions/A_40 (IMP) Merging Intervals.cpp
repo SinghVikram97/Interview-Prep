@@ -51,3 +51,7 @@ public:
         return ans; 
     }
 };
+
+
+
+https://practice.geeksforgeeks.org/viewSol.php?subId=7345114&pid=126&user=Vikram%20Singh%2012
