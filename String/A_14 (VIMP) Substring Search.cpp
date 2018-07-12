@@ -11,7 +11,7 @@ USING KMP
 
 https://drive.google.com/open?id=1-E13C7AiFjhXtxIRJ0hanFD5Yv2Ukkd5 (Intuition)
 https://drive.google.com/open?id=1VEpmfCx-H-HQPBHpGiMGb6Vg70p38kGU (What is proper prefix suffix)
-(LPS)
+(LPS) ------> https://www.youtube.com/watch?v=tWDUjkMv6Lc&
 https://drive.google.com/open?id=1OoQ5RPvOZRdsqL9MPsmQ74yQ8wg09SLw
 https://drive.google.com/open?id=1uHcLMng775TM5mA6JHq-W63E8vdGwPN9
 https://drive.google.com/open?id=1TpA1o3-dzHdgn06U-kI_45R9JJX93RvB
