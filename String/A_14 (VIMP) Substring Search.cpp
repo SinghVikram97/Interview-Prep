@@ -16,8 +16,9 @@ https://drive.google.com/open?id=1OoQ5RPvOZRdsqL9MPsmQ74yQ8wg09SLw
 https://drive.google.com/open?id=1uHcLMng775TM5mA6JHq-W63E8vdGwPN9
 https://drive.google.com/open?id=1TpA1o3-dzHdgn06U-kI_45R9JJX93RvB
 https://drive.google.com/open?id=1v_5RwUezeifjTit89A6tRX6ttROvJJ__
-(Index of substring)
 https://drive.google.com/open?id=1bKpUmsrtcCqKJCIG5LZVBgV1QNgNCika
+(Index of substring)
+https://drive.google.com/open?id=103KLaHmxJBBuIER-3an-wJnEL0Zpro03
 .........................................
 #include<bits/stdc++.h>
 using namespace std;
