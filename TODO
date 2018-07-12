@@ -1,16 +1,1 @@
-https://www.geeksforgeeks.org/rearrange-array-alternating-positive-negative-items-o1-extra-space/
 
-https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/
-
-
-Max Sum Without Adjacent Elements
-
-
- https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
-
-Instead of digits, it was string of alphabets. There was a bug in my code. Interviewer gave me a test case and asked me to test it. Changed the approach and solved it by sorting. He asked which sorting and why? First I said merge sort because of nlogn complexity. Then I said since range is small(1-26), we can use count sort. He asked if we really need sorting? Then I said that reversing the second part was sufficient because it was in descending order.
-
-
-kth smallest element bst
-
-implement find substring using kmp
