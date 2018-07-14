@@ -1,6 +1,9 @@
 https://drive.google.com/open?id=125LG3fRsZ46kV63shoOahtXIfYRmnBPb (Algo)
 https://drive.google.com/open?id=15xuICxploRZCsYC4aMbuM5snlsfELJVs (IMP)
 
+Doesn't work for self loops ie. edge from 0 to 0 as we are assigning parent[startVertex]=startVertex
+We can make it work if we assign a parent to startVertex which is not in vertex list
+
 #include<bits/stdc++.h>
 using namespace std;
 template<typename T>
