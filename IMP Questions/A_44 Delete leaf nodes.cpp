@@ -1,6 +1,8 @@
 https://www.geeksforgeeks.org/delete-leaf-nodes-value-x/
 
-/// Postorder traversal
+/// Postorder traversal because
+It must handle all cases for example if u delete both leaf from a node Say B. Then the node B also becomes the leaf node
+
 Node *deleteLeafNodes(Node *root,int k){
 
     if(root==NULL){
