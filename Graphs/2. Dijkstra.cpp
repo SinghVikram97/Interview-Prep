@@ -10,6 +10,15 @@ IMP-> We do not need to keep track of whether a vertex is "done/finalized" ("vis
       the new distance will never be less than it was originally), so it will be skipped anyway.
 *************************************************************
 
+DOESN'T WORK WITH NEGATIVE WEIGHTS
+*************************************************************
+Dijkstra relies on one "simple" fact: 
+if all weights are non-negative, adding an edge can never make a path shorter.  (GREEDY ALGO)
+That's why picking the shortest candidate edge (local optimality) always ends up being correct (global optimality).
+
+If that is not the case, the "frontier" of candidate edges does not send the right signals;
+a cheap edge might lure you down a path with positive weights while an expensive one hides a path with negative weights.
+*************************************************************
 
 #include<bits/stdc++.h>
 using namespace std;
