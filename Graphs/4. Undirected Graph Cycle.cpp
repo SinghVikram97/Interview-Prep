@@ -4,6 +4,14 @@ https://drive.google.com/open?id=15xuICxploRZCsYC4aMbuM5snlsfELJVs (IMP)
 Doesn't work for self loops ie. edge from 0 to 0 as we are assigning parent[startVertex]=startVertex
 We can make it work if we assign a parent to startVertex which is not in vertex list
 
+Doesn't work for directed graphs
+If graph is directed then you have to not just remember if you have visited a node or not, 
+but also how you got there. 
+Otherwise you might think you have found a cycle but in reality all you have is two separate paths A->B 
+but that doesn't mean there is a path B->A. For example, 
+    
+https://i.stack.imgur.com/lZ7ro.png
+
 #include<bits/stdc++.h>
 using namespace std;
 template<typename T>
