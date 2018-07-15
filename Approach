@@ -10,3 +10,4 @@
 10. For kth smallest element use heap to build max heap of k smallest elements and it's top will be kth smallest element.
     For kth largest element use heap to build min heap of k largest elements and it's top will be kth largest element.
 11. For paranthesis/brackets use stack
+12. How can we canculate dp[i] from not necessarily only dp[i-1] but from previous stored dp[0]..dp[i-1] 
