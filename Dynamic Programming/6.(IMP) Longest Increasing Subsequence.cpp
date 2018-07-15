@@ -40,36 +40,38 @@ https://drive.google.com/open?id=1suB4Rklme21yppYF5s65z6KnXHUC6dAh
 
 class Solution {
 public:
-    int lengthOfLIS(vector<int>& A) {
-        
-        int n=A.size();
-    
-      if(n==0){
-        return 0;
-      }
-      else if(n==1){
-        return 1;
-      }
-      int dp[n];
-    
-      dp[0]=1;
-    
-      for(int i=1;i<n;i++){
-        
-        dp[i]=1;
-        
-        for(int j=i-1;j>=0;j--){
-            
-            if(A[j]<A[i]){
-                dp[i]=max(dp[i],1+dp[j]);
-            }
-            
+
+    int lengthOfLIS(vector<int>& nums) {
+       
+        int n=nums.size();
+        if(n==0){
+            return 0;
         }
-    }
-        int ans=0;
-    for(int i=0;i<n;i++){
-        ans=max(ans,dp[i]);
-    }
-        return ans;
+        
+        int dp[n];  // dp[i] denoted length longest increasing subsequence which ends at nums[i]
+        
+        dp[0]=1; // Single character also a increasing subsequence 
+        
+        for(int i=1;i<n;i++){
+            
+            // Decide length longest increasing subsequence which ends at nums[i]
+            // Min can be nums[i] itself
+            dp[i]=1;
+            for(int j=i-1;j>=0;j--){
+                
+                // Condition for increasing subsquence
+                if(nums[j]<nums[i]){
+                    dp[i]=max(dp[i],dp[j]+1);  // Longest increasing subsquence ending at j + include nums[i] in it as nums[i]>nums[j]
+                }                
+            }
+        }
+        
+        // Now we have length of longest increasing subsquences ending at i
+        // Our LIS can end at any i
+        int length=1;
+        for(int i=0;i<n;i++){
+            length=max(length,dp[i]);
+        }
+        return length;
     }
 };
