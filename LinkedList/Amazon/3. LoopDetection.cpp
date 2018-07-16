@@ -7,19 +7,14 @@ https://drive.google.com/open?id=1kWlr_KNko2NPvumynHVCybCtzaB9gVSP  /// No extra
 
 int detectloop(Node *head)
 {
-   // your code here
-   Node *slow=head;
    Node *fast=head;
-   
-   while(fast->next!=NULL && fast->next->next!=NULL){
-       
+   Node *slow=head;
+   while(fast!=NULL && fast->next!=NULL){
        fast=fast->next->next;
        slow=slow->next;
-       
        if(fast==slow){
            return 1;
        }
-       
    }
    return 0;
 }
