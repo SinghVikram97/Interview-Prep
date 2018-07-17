@@ -1,2 +1,3 @@
 1. For deletion use a previous pointer 
 2. Finding mid use fast and slow pointer
+3. Reversing the linked list using prev cur and next without recursion
