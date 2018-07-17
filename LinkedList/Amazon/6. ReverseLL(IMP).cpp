@@ -19,5 +19,5 @@ Node* reverse(Node *head)
       cur=next;
       
   }
-  return prev;  
+  return prev;  (IMP)
 }
