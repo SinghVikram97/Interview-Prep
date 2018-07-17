@@ -25,23 +25,18 @@ void sortList(Node *head)
        temp=temp->next;
    }
    temp=head;
-   while(temp!=NULL){
-       
-       if(count0!=0){
-           
-           temp->data=0;
-           count0--;
-           
-       }
-       else if(count1!=0){
-           temp->data=1;
-           count1--;
-       }
-       else{
-            temp->data=2;
-            count2--;
-       }
+   while(count0--){
+       temp->data=0;
+       temp=temp->next;
+   }
+   while(count1--){
+       temp->data=1;
+       temp=temp->next;
+   }
+   while(count2--){
+       temp->data=2;
        temp=temp->next;
    }
    return;
 }
+
