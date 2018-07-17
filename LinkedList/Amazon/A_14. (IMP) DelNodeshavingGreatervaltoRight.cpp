@@ -24,31 +24,31 @@ Node *compute(Node *head)
      
      // 2. Start traversing reversed list now we have to delete elements having greater elements to left
      
-     Node *temp=prev; // Prev is the newHead
-     Node *maxTillNow=prev;  // So that we know if there's a element greater to left
+     Node *newHead=prev;
+     int maxTillNow=newHead->data;
+     cur=newHead->next; // Start traversing from 2nd element as head doesn't have any element to left
+     prev=newHead;
      
-     while(temp->next!=NULL){
-         
-         if(temp->next->data<maxTillNow->data){
-             
-             // Delete temp->next
-             Node *del=temp->next;
-             temp->next=temp->next->next;
-             delete del;
-             // No need to do temp=temp->next as temp->next already got updated
+     while(cur!=NULL){
+         // It means a greater element to left
+         if(cur->data<maxTillNow){
+             // Delete it
+             Node *temp=cur;
+             prev->next=cur->next;
+             delete temp;
+             cur=prev->next; // Prev remains same
          }
          else{
-             
-             // Update max
-             maxTillNow=temp->next;  // Not temp as we are comparing temp->next->data
-             temp=temp->next;
-             
+             // Update maxTillNow
+             maxTillNow=cur->data;
+             prev=cur;
+             cur=cur->next;
          }
-         
      }
      
+     
+     
      // 3. Reverse the list again
-     Node *newHead=prev;
      prev=NULL;
      cur=newHead;
      next=NULL;
@@ -64,3 +64,4 @@ Node *compute(Node *head)
      return prev;
      
 }
+
