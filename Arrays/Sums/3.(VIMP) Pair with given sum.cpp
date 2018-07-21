@@ -3,6 +3,17 @@ https://leetcode.com/problems/two-sum/description/
 https://drive.google.com/open?id=16pfHoeAHkkpSjPLmkvtpjIb8S9uqkYBG
 https://drive.google.com/open?id=1mzd0tdoPa0LS4n_KVIbVYSvh242Ic-pB  (IMPPP)
 
+BRUTE FORCE-->
+        int n=nums.size();
+        
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(nums[i]+nums[j]==target){
+                    return {i,j};
+                }
+            }
+        }
+
 vector<int> twoSum(vector<int>& v, int target) {
         
         int n=v.size();
