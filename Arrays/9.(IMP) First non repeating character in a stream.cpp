@@ -36,8 +36,11 @@ int main() {
             // Increase frequency of current element
             freq[ch[i]-'a']++;
             
-            // Push it into the queue
-            q.push(ch[i]);
+            // Push it into the queue only if freq=1
+            if(freq[ch[i]-'a']==1){
+                q.push(ch[i]);
+            }
+            
             
             while(!q.empty()){
                 
