@@ -3,6 +3,10 @@ https://drive.google.com/open?id=1g1tAwrTw4H9Dndm-KZvVN359B4NYhPNe
 
 https://ide.geeksforgeeks.org/eeR5YS5yAN  (See binary_search function)
 
+Lower bound: first element that is greater-or-equal.
+
+Upper bound: first element that is strictly greater.
+
 Total occurence of element=UpperBound-LowerBound
 
 #include<bits/stdc++.h>
