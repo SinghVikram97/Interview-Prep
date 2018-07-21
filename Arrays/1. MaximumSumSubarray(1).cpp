@@ -50,6 +50,17 @@ int main(){
         }
         cout<<ms<<endl;
     }
-    
-
 }
+
+..............................
+ ANOTHER SOLUTION
+ for(int i=0;i<n;i++){
+            
+           // Either take our element in subarray or start subarray fresh
+           cs=max(cs+v[i],v[i]);
+           if(cs>ms){
+               ms=cs;
+           }
+            
+  }
+  cout<<ms<<endl;
