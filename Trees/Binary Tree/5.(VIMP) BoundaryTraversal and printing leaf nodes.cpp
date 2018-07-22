@@ -45,27 +45,17 @@ void rightBoundary(Node *p){
 }
 
 /// PRINTING LEAF NODES OF A TREE
-void printLeafNodes(Node *p){
+void printLeafNodes(Node *root){
     
-    
-    if(p!=NULL){
-        
-        // Move left most
-        printLeafNodes(p->left);
-        
-        // CONTROL COMES HERE WHEN P->LEFT IS NULL SO IT RETURNS NULL AND WE EXECUTE LINE 58
-        // Print if leaf node
-        if(p->left==NULL && p->right==NULL){
-            cout<<p->data<<" ";
-        }
-        
-        // Return to node which is parent of leftmost leaf node and move to it's right
-        printLeafNodes(p->right);
+    if(root==NULL){
+        return;
     }
-    else{
-        return NULL;
+    else if(root->left==NULL && root->right==NULL){
+        cout<<root->data<<" ";
+        return;
     }
-    
+    printLeafNodes(root->left);
+    printLeafNodes(root->right);
 }
 void printBoundary(Node *root)
 {
