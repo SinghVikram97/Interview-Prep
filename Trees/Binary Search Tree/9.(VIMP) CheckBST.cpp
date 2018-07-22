@@ -8,7 +8,7 @@ bool BST(Node *root,int min,int max){
     if(root==NULL){
         return true;  // leaf nodes both left and right subtree should be true
     }
-    if(root->data<=min || root->data>=max){
+    if(!(root->data>min && root->data<max)){
         return false;
     }
     // Left jate ho toh upper limit cur node ka data hona chaiye
