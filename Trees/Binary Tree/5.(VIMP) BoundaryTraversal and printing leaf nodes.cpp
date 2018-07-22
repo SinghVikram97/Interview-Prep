@@ -74,7 +74,7 @@ void printBoundary(Node *root)
         
         cout<<root->data<<" ";
         
-        // Don't bass root to left and right boundary as it will be printed twice as it is in both boundaries
+        // Don't pass root to left and right boundary as it will be printed twice as it is in both boundaries
         leftBoundary(root->left);
         
         printLeafNodes(root);
