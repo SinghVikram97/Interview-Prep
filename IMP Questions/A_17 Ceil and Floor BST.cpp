@@ -26,7 +26,7 @@ int Ceil(Node *root,int key){
     int ceil=Ceil(root->left,key);
 
     /// If it doesn't return -1 then it means we have an element in left subtree>key
-    ceil=(ceil>=input)?(ceil):(root->data);
+    ceil=(ceil>=key)?(ceil):(root->data);
 
 }
 
@@ -45,6 +45,6 @@ int floor(node *root, int input)
         return floor(root->left, input);
  
     // Else, either right subtree or root has the floor value
-    int floor = floor(root->right, input);
-    return (floor <= input && floor!=-1) ? floor : root->key;
+    int floor = floor(root->right, key);
+    return (floor <= key && floor!=-1) ? floor : root->key;
 }
