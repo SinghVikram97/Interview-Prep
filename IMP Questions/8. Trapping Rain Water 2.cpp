@@ -3,6 +3,7 @@ https://leetcode.com/problems/trapping-rain-water/description/
 https://drive.google.com/open?id=1hWAnrYDEDKkPJW0jFiOEvZSm6XNXSlnU (IMP)
 https://leetcode.com/problems/trapping-rain-water/solution/ (IMP)
 
+https://leetcode.com/problems/trapping-rain-water/discuss/17357/Sharing-my-simple-c%2B%2B-code%3A-O(n)-time-O(1)-space (Check comments)
 
 
 class Solution {
