@@ -45,17 +45,19 @@ void rightBoundary(Node *p){
 }
 
 /// PRINTING LEAF NODES OF A TREE
-void printLeafNodes(Node *root){
+void printLeafNodes(Node *root, Node *fixedRoot){
     
     if(root==NULL){
         return;
     }
     else if(root->left==NULL && root->right==NULL){
-        cout<<root->data<<" ";
+        if(root!=fixedRoot) {
+            cout<<root->data<<" ";
+        }
         return;
     }
-    printLeafNodes(root->left);
-    printLeafNodes(root->right);
+    printLeafNodes(root->left,root);
+    printLeafNodes(root->right,root);
 }
 void printBoundary(Node *root)
 {
@@ -67,7 +69,7 @@ void printBoundary(Node *root)
         // Don't pass root to left and right boundary as it will be printed twice as it is in both boundaries
         leftBoundary(root->left);
         
-        printLeafNodes(root);
+        printLeafNodes(root,root);
         
         rightBoundary(root->right);
         
