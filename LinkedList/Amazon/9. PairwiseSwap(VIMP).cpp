@@ -7,22 +7,18 @@ RECURSIVE SOLUTION--> USES SPACE DUE TO RECURSION https://drive.google.com/open?
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
-        
         if(head==NULL || head->next==NULL){
             return head;
         }
-        
-        ListNode *rightPart=swapPairs(head->next->next);
-        ListNode *newHead;
-        
-        head->next->next=head;
-        
-        newHead=head->next;
-        
+
+        ListNode* rightPart=swapPairs(head->next->next);
+
+        ListNode* newHead=head->next;
+
+        newHead->next=head;
         head->next=rightPart;
-        
+
         return newHead;
-        
     }
 };
 
