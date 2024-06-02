@@ -2,6 +2,28 @@ https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/
 
 https://drive.google.com/open?id=1zRR2tgfyslZqf0RJXmrVVf9c_XzZ_W8U
 
+// Non Recursive
+int findCeil(Node* root, int input) {
+    Node *ceil=NULL;
+    while(root){
+        if(root->data==input){
+            ceil=root;
+            break;
+        }else if(root->data<input){
+            // move right
+            root=root->right;
+        }else{
+            ceil=root;
+            root=root->left;
+        }
+    }
+    if(ceil){
+        return ceil->data;
+    }else{
+        return -1;
+    }
+}
+
 Similar to upper and lower bound in binary search
 
 Time complexity-O(logn)
